@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>1008</MsgId>
+      <CreDtTm>2024-02-20T13:55:26</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <CtrlSum>100.00</CtrlSum>
+      <InitgPty>
+        <Nm>Farrell Brothers Ardee Ltd</Nm>
+        <PstlAdr>
+          <StrtNm>John Street</StrtNm>
+          <PstCd>A92 NN53</PstCd>
+          <TwnNm>Ardee</TwnNm>
+          <Ctry>IE</Ctry>
+        </PstlAdr>
+        <Id>
+          <OrgId>
+            <Othr>
+              <Id>IE9Z20065B</Id>
+            </Othr>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>1008/1</PmtInfId>
+      <PmtMtd>TRF</PmtMtd>
+      <BtchBookg>false</BtchBookg>
+      <NbOfTxs>1</NbOfTxs>
+      <CtrlSum>100.00</CtrlSum>
+      <PmtTpInf>
+        <InstrPrty>NORM</InstrPrty>
+      </PmtTpInf>
+      <ReqdExctnDt>2024-02-20</ReqdExctnDt>
+      <Dbtr>
+        <Nm>Farrell Brothers Ardee Ltd</Nm>
+        <PstlAdr>
+          <StrtNm>John Street</StrtNm>
+          <PstCd>A92 NN53</PstCd>
+          <TwnNm>Ardee</TwnNm>
+          <Ctry>IE</Ctry>
+        </PstlAdr>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>IE79BOFI93115212345678</IBAN>
+        </Id>
+      </DbtrAcct>
+      <ChrgBr>SLEV</ChrgBr>
+      <CdtTrfTxInf>
+        <PmtId>
+          <EndToEndId>1008/1</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">100.00</InstdAmt>
+        </Amt>
+        <CdtrAgt>
+          <FinInstnId>
+            <BIC>AIBKIE2D</BIC>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>123INK.IE</Nm>
+          <PstlAdr>
+            <StrtNm>Units 29 + 30 North Park</StrtNm>
+            <PstCd>D11</PstCd>
+            <TwnNm>Dublin 11</TwnNm>
+            <Ctry>IE</Ctry>
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>IE90AIBK93104717972101</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>123INK.IE</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>
