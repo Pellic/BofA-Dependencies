@@ -1,0 +1,66 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ros.ie/schemas/paye-employers/err/v1/enhanced_reporting/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EnhancedReportingSubmissionRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="SubmissionID"/>
+        <xs:element name="Header">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="EmployerRegistrationNumber"/>
+              <xs:element type="xs:string" name="EnhancedReportingRunReference"/>
+              <xs:element type="xs:short" name="TaxYear"/>
+              <xs:element name="SoftwareUsed">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Name"/>
+                    <xs:element type="xs:string" name="Version"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ExpensesBenefits" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="LineItemID"/>
+              <xs:element name="EmployeeID">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="EmployeePPSN"/>
+                    <xs:element type="xs:byte" name="EmploymentID"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="EmployerReference"/>
+              <xs:element name="Name">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="FirstName"/>
+                    <xs:element type="xs:string" name="FamilyName"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="AddressLine"/>
+                    <xs:element type="xs:string" name="County"/>
+                    <xs:element type="xs:string" name="Eircode"/>
+                    <xs:element type="xs:string" name="CountryCode"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:date" name="DateOfBirth"/>
+              <xs:element type="xs:string" name="Category"/>
+              <xs:element type="xs:string" name="SubCategory" minOccurs="0"/>
+              <xs:element type="xs:date" name="PaymentDate"/>
+              <xs:element type="xs:byte" name="NumberOfDays" minOccurs="0"/>
+              <xs:element type="xs:byte" name="Amount"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
